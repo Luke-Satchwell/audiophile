@@ -13,17 +13,17 @@ export const metadata = {
   description: "Fulfill all of your audio needs",
 };
 
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
-    <body
-      className={`${manrope.className} max-w-[1440px] mx-auto overflow-x-hidden`}
-    >
-      <main className=" mt-16 md:mt-[120px] lg:mt-40">
-        {children}
-        <CategoryLinks />
-        <About />
-      </main>
-      <Footer />
-    </body>
+    <html lang="en">
+      <body
+        className={`${manrope.className} max-w-[1440px] mx-auto overflow-x-hidden`}
+      >
+        <main>
+          {children}
+          <CategoryLinks />
+        </main>
+      </body>
+    </html>
   );
 }

@@ -175,11 +175,11 @@ const ProductDetailPage = ({ params }) => {
                         className="flex flex-col items-center gap-6"
                       >
                         <Image
-                          src={item.image.mobile}
+                          src={item.image.desktop}
                           width={327}
                           height={318}
                           alt="product-image"
-                          className="rounded-lg"
+                          className="rounded-lg md:h-[318px] md:w-[223px] lg:w-[350px]"
                         />
                         <div className="flex flex-col items-center gap-8">
                           <h2 className={`${sectionTitle} leading-[33px]`}>
